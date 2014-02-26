@@ -1,5 +1,13 @@
 <?php
 
+Route::filter('cumpleanos', function(){
+
+    if(date('d/m')=='21/02')
+        return View::make('happy');
+});
+
+
+
 /*
 |--------------------------------------------------------------------------
 | Application & Route Filters
